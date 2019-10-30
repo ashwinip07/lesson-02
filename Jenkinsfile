@@ -18,10 +18,10 @@ node {
     {
     /* you would need to register with docker hub first */ 
     
-    docker.withRegistry('https://hub.docker.com','docker-hub1'){
+    //docker.withRegistry('https://hub.docker.com','docker-hub1'){
     app.push("${env.BUILD_NUMBER}")
    app.push("latest")
-          }
+       //   }
     
     echo "Trying to push docker build to docker hub" 
     }
